@@ -1,0 +1,34 @@
+.heroDiv {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    width: 1280px;
+    margin: 4em auto;
+    /* margin: 0 200px; */
+  }
+
+  .heroTextDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .fullStackWebDevelopment,
+.hospitalManagementSystem {
+  position: relative;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  line-height: 132%;
+  /* width: 777.33px; */
+}
+.hospitalManagementSystem {
+  font-size: 48px;
+}
+.springBootJava {
+  color: #007fef;
+}

@@ -1,0 +1,13 @@
+  .imageHolder {
+    width: 1280px;
+    margin: 2em auto;
+    height: 450px;
+  }
+
+  .addImageHere {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }

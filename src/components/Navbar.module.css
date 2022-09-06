@@ -1,0 +1,33 @@
+  .navDiv {
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 32px 200px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .navBarDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 80px;
+    font-size: 20px;
+  }
+
+  .portfolioB,
+.workDiv {
+position: relative;
+letter-spacing: -0.02em;
+display: inline-block;
+}
+.workDiv {
+cursor: pointer;
+}
