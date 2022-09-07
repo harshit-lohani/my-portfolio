@@ -20,17 +20,24 @@ const Navbar = () => {
         }
       }, []);
 
+      const onResumeClick = useCallback(() => {
+        const anchor = document.querySelector(
+          "[data-scroll-to='resumeContainer']"
+        );
+        if (anchor) {
+          anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+        }
+      }, []);
+
     return (
-        <div className={styles.navDiv}>
-        <b className={styles.portfolioB}>Portfolio</b>
+      <nav className={styles.navDiv}>
+        <b className={styles.navBarLogo}>Portfolio</b>
         <div className={styles.navBarDiv}>
-          <div className={styles.workDiv} onClick={onWorkTextClick}>
-            Work
-          </div>
-          <div className={styles.portfolioB} onClick={onAboutClick}>About</div>
-          <div className={styles.portfolioB}>Resume</div>
+          <div className={styles.navBarLink} onClick={onWorkTextClick}>Work</div>
+          <div className={styles.navBarLink} onClick={onAboutClick}>About</div>
+          <div className={styles.navBarLink} onClick={onResumeClick}>Resume</div>
         </div>
-      </div>
+      </nav>
     );
 
 }

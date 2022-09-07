@@ -1,0 +1,52 @@
+.heroTextDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.heroDiv {
+  font-size: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  margin: 12rem auto 5rem auto;
+  gap: 40px;
+  width: 1280px;
+}
+
+.heroHeader {
+    letter-spacing: -0.02em;
+    line-height: 132%;
+    display: inline-block;
+    width: 100%;
+}
+
+.heroFooterText {
+    letter-spacing: -0.02em;
+    line-height: 100%;
+    display: inline-block;
+    width: 100%;
+}
+
+.heroHeaderTitle {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.blue {
+    /* margin: 0; */
+    color: #007fef;
+  }
+
+
+.heroFooter {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 132%;
+  font-size: 24px;
+  display: inline-block;
+}

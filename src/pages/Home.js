@@ -1,7 +1,10 @@
 import { useCallback } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Button } from "react-bootstrap";
 import styles from "./Home.module.css";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import HomeHero from "../components/HomeHero";
+import LineDiv from "../components/LineDiv";
 
 const Home = () => {
   const onWorkTextClick = useCallback(() => {
@@ -36,41 +39,12 @@ const Home = () => {
 
   return (
     <div className={styles.homeDiv}>
-      <div className={styles.footerDiv}>
-        <div className={styles.footerDetailsDiv}>
-          <div className={styles.footerTopDiv}>
-            <div className={styles.lookingForSomeOneToJoinA}>
-              Looking for some one to join an awesome venture
-            </div>
-            <div className={styles.letsConnectDiv}>
-              <div className={styles.projectTitleDiv}>{`Let's Connect `}</div>
-              <div className={styles.arrowDiv}>
-                <textarea className={styles.textarea}>↗</textarea>
-                <input className={styles.input} type="checkbox">
-                  ↗
-                </input>
-              </div>
-            </div>
-          </div>
-          <div className={styles.socialLinksDiv}>
-            <div className={styles.socialLinksDiv1}>
-              <div className={styles.linkedInDiv}>
-                <span>{`LinkedIn `}</span>
-                <span className={styles.span}>↗</span>
-              </div>
-              <div className={styles.hrDiv} />
-            </div>
-            <div className={styles.socialLinksDiv2}>
-              <div className={styles.linkedInDiv}>Behance ↗</div>
-              <textarea className={styles.hrTextarea} />
-            </div>
-            <div className={styles.socialLinksDiv2}>
-              <div className={styles.linkedInDiv}>Twitter ↗</div>
-              <textarea className={styles.hrTextarea} />
-            </div>
-          </div>
-        </div>
-      </div>
+      
+      <Navbar />
+      <HomeHero />
+      <LineDiv />
+
+      
       <div className={styles.resumeDiv} data-scroll-to="resumeContainer">
         <div className={styles.titleDiv}>
           <b className={styles.linkedInDiv}>Resume</b>
@@ -144,6 +118,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+
       <div className={styles.aboutDiv} data-scroll-to="aboutContainer">
         <div className={styles.footerDetailsDiv}>
           <div className={styles.hiImJohnDoeUXDesigner}>
@@ -173,12 +149,10 @@ const Home = () => {
           />
         </div>
       </div>
-      <div
-        className={styles.projectListDiv}
-        data-scroll-to="projectListContainer"
-      >
+
+
+      <div className={styles.projectListDiv} data-scroll-to="projectListContainer">
         <div className={styles.projectDiv}>
-          <div className={styles.lineDiv} />
           <div className={styles.footerDetailsDiv}>
             <div className={styles.frameDiv6}>
               <div className={styles.frameDiv7}>
@@ -350,53 +324,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className={styles.heroDiv}>
-        <div className={styles.heoTextDiv}>
-          <div className={styles.hiImHarshitLohaniSoftwa}>
-            <p className={styles.hiImHarshitLohani}>
-              <span>Hi, I'm Harshit Lohani.</span>
-            </p>
-            <p className={styles.softwareDeveloperAndUXDesi}>
-              <b>{`Software Developer `}</b>
-              <span className={styles.andSpan}>and</span>
-              <b className={styles.uXDesignerB}> UX Designer</b>
-              <span className={styles.andSpan}>{` `}</span>
-            </p>
-          </div>
-          <div className={styles.projectSubtiteWillGoHere}>
-            <p className={styles.hiImHarshitLohani}>
-              <span>{`Software Developer Intern at `}</span>
-              <b className={styles.ciscoB}>{`Cisco `}</b>
-              <span className={styles.ciscoB}>and</span>
-              <b className={styles.ciscoB}> Hexacorp</b>
-            </p>
-            <p className={styles.wireframeStoryBoarding}>
-              <span>{`UI and UX Designer at `}</span>
-              <b className={styles.ciscoB}>Dairy Systems</b>
-              <span className={styles.ciscoB}>{` `}</span>
-            </p>
-          </div>
-        </div>
-        <Button variant="primary">My Resume ↗</Button>
-      </div>
-      <nav
-        className={styles.nav}
-        id="nav-container"
-        data-scroll-to="navContainer"
-      >
-        <b className={styles.portfolioB}>Portfolio</b>
-        <div className={styles.navBarDiv}>
-          <div className={styles.workDiv} onClick={onWorkTextClick}>
-            Work
-          </div>
-          <div className={styles.workDiv} onClick={onAboutTextClick}>
-            About
-          </div>
-          <div className={styles.workDiv} onClick={onResumeText1Click}>
-            Resume
-          </div>
-        </div>
-      </nav>
+
+
       <button className={styles.goTopBtn} onClick={onGoTopBtnClick}>
         <div className={styles.movingArrowDiv6}>
           <div className={styles.maskGroupDiv}>
@@ -408,6 +337,10 @@ const Home = () => {
         </div>
         <div className={styles.goToTop}>Go to top</div>
       </button>
+
+
+      <Footer />
+
     </div>
   );
 };

@@ -22,12 +22,19 @@
     font-size: 20px;
   }
 
-  .portfolioB,
-.workDiv {
-position: relative;
-letter-spacing: -0.02em;
-display: inline-block;
-}
-.workDiv {
-cursor: pointer;
-}
+  .navBarLogo,
+  .navBarLink {
+  position: relative;
+  letter-spacing: -0.02em;
+  display: inline-block;
+  cursor: pointer;
+  }
+
+  .navBarLogo {
+    font-size: 24px;
+  }
+
+  .navBarLink {
+  cursor: pointer;
+  font-size: 20px;
+  }

@@ -4,6 +4,7 @@ import ProjectHero from "../components/ProjectHeroImage";
 import ProjectHeroText from "../components/ProjectHeroText";
 import Navbar from "../components/Navbar";
 import ProjectImage from "../components/ProjectImage";
+import LineDiv from "../components/LineDiv";
 
 const ProjectShowcase = () => {
   
@@ -14,7 +15,7 @@ const ProjectShowcase = () => {
       <Navbar/>
       <ProjectHero />      
       <ProjectHeroText />
-      <div className={styles.lineDiv} />
+      <LineDiv /> 
       <div className={styles.imageSection}>      
         <ProjectImage path={path}/>
         <ProjectImage path={path}/>
