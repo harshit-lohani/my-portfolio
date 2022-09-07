@@ -1,5 +1,6 @@
 import styles from "./HomeHero.module.css"
 import { Button } from "react-bootstrap";
+import CTAButton from "./CTAButton";
 
 const HomeHero = () => {
     
@@ -33,7 +34,7 @@ const HomeHero = () => {
                     </p>
                 </div>
             </div>
-            <Button variant="primary">My Resume ↗</Button>
+            <CTAButton variant="primary">My Resume ↗</CTAButton>
         </div>
 
     );

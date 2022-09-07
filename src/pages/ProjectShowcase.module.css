@@ -191,6 +191,11 @@
 }
 
 .imageSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
   margin: 5rem auto;
   width: 100%;
 }

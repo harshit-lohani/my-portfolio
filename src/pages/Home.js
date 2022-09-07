@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import HomeHero from "../components/HomeHero";
 import LineDiv from "../components/LineDiv";
+import ProjectThumbnail from "../components/ProjectThumbnail";
 
 const Home = () => {
   const onWorkTextClick = useCallback(() => {
@@ -42,7 +43,6 @@ const Home = () => {
       
       <Navbar />
       <HomeHero />
-      <LineDiv />
 
       
       <div className={styles.resumeDiv} data-scroll-to="resumeContainer">
@@ -152,177 +152,12 @@ const Home = () => {
 
 
       <div className={styles.projectListDiv} data-scroll-to="projectListContainer">
-        <div className={styles.projectDiv}>
-          <div className={styles.footerDetailsDiv}>
-            <div className={styles.frameDiv6}>
-              <div className={styles.frameDiv7}>
-                <div className={styles.projectTitleDiv}>Web Development</div>
-                <div className={styles.projectSubtiteWillGoHere}>
-                  Hospital Management System
-                </div>
-              </div>
-              <div className={styles.movingArrowDiv}>
-                <div className={styles.maskGroupDiv}>
-                  <div className={styles.rectangleDiv2} />
-                </div>
-                <div className={styles.maskGroupDiv1}>
-                  <div className={styles.rectangleDiv3} />
-                </div>
-              </div>
-            </div>
-            <div className={styles.projectImageDiv}>
-              <img
-                className={styles.addImageHere}
-                alt=""
-                src="../add-image-here@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-        <div className={styles.projectDiv}>
-          <div className={styles.lineDiv} />
-          <div className={styles.footerDetailsDiv}>
-            <div className={styles.frameDiv6}>
-              <div className={styles.frameDiv7}>
-                <div className={styles.projectTitleDiv}>Graphic Design</div>
-                <div className={styles.projectSubtiteWillGoHere}>
-                  2D Game Map of BITS Pilani Campus
-                </div>
-              </div>
-              <div className={styles.movingArrowDiv}>
-                <div className={styles.maskGroupDiv}>
-                  <div className={styles.rectangleDiv2} />
-                </div>
-                <div className={styles.maskGroupDiv1}>
-                  <div className={styles.rectangleDiv3} />
-                </div>
-              </div>
-            </div>
-            <div className={styles.projectImageDiv}>
-              <img
-                className={styles.addImageHere}
-                alt=""
-                src="../add-image-here1@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-        <div className={styles.projectDiv}>
-          <div className={styles.lineDiv} />
-          <div className={styles.footerDetailsDiv}>
-            <div className={styles.frameDiv6}>
-              <div className={styles.frameDiv7}>
-                <div className={styles.projectTitleDiv}>{`UI & UX Design`}</div>
-                <div className={styles.projectSubtiteWillGoHere}>
-                  InfoBITS Mobile App Redesign
-                </div>
-              </div>
-              <div className={styles.movingArrowDiv}>
-                <div className={styles.maskGroupDiv}>
-                  <div className={styles.rectangleDiv2} />
-                </div>
-                <div className={styles.maskGroupDiv1}>
-                  <div className={styles.rectangleDiv3} />
-                </div>
-              </div>
-            </div>
-            <div className={styles.projectImageDiv}>
-              <img
-                className={styles.addImageHere}
-                alt=""
-                src="../add-image-here2@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-        <div className={styles.projectDiv}>
-          <div className={styles.lineDiv} />
-          <div className={styles.footerDetailsDiv}>
-            <div className={styles.frameDiv6}>
-              <div className={styles.frameDiv7}>
-                <div className={styles.projectTitleDiv}>{`UI & UX Design`}</div>
-                <div className={styles.projectSubtiteWillGoHere}>
-                  Dairy Systems Mobile App
-                </div>
-              </div>
-              <div className={styles.movingArrowDiv}>
-                <div className={styles.maskGroupDiv}>
-                  <div className={styles.rectangleDiv2} />
-                </div>
-                <div className={styles.maskGroupDiv1}>
-                  <div className={styles.rectangleDiv3} />
-                </div>
-              </div>
-            </div>
-            <div className={styles.projectImageDiv}>
-              <img
-                className={styles.addImageHere}
-                alt=""
-                src="../add-image-here2@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-        <div className={styles.projectDiv}>
-          <div className={styles.lineDiv} />
-          <div className={styles.footerDetailsDiv}>
-            <div className={styles.frameDiv6}>
-              <div className={styles.frameDiv7}>
-                <div className={styles.projectTitleDiv}>
-                  Front-End Web Development
-                </div>
-                <div className={styles.projectSubtiteWillGoHere}>
-                  University Website
-                </div>
-              </div>
-              <div className={styles.movingArrowDiv}>
-                <div className={styles.maskGroupDiv}>
-                  <div className={styles.rectangleDiv2} />
-                </div>
-                <div className={styles.maskGroupDiv1}>
-                  <div className={styles.rectangleDiv3} />
-                </div>
-              </div>
-            </div>
-            <div className={styles.projectImageDiv}>
-              <img
-                className={styles.addImageHere}
-                alt=""
-                src="../add-image-here2@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-        <div className={styles.projectDiv}>
-          <div className={styles.lineDiv} />
-          <div className={styles.footerDetailsDiv}>
-            <div className={styles.frameDiv6}>
-              <div className={styles.frameDiv7}>
-                <div className={styles.projectTitleDiv}>
-                  Full-Stack Web Development
-                </div>
-                <div className={styles.projectSubtiteWillGoHere}>
-                  Email Management Website
-                </div>
-              </div>
-              <div className={styles.movingArrowDiv}>
-                <div className={styles.maskGroupDiv}>
-                  <div className={styles.rectangleDiv2} />
-                </div>
-                <div className={styles.maskGroupDiv1}>
-                  <div className={styles.rectangleDiv3} />
-                </div>
-              </div>
-            </div>
-            <div className={styles.projectImageDiv}>
-              <img
-                className={styles.addImageHere}
-                alt=""
-                src="../add-image-here2@2x.png"
-              />
-            </div>
-          </div>
-        </div>
+
+          <ProjectThumbnail />
+          <ProjectThumbnail />
+          <ProjectThumbnail />
+          <ProjectThumbnail />
+
       </div>
 
 
