@@ -1,0 +1,107 @@
+.aboutDiv {
+    /* position: absolute; */
+    /* top: 4507px; */
+    /* left: 200px; */
+    width: 1280px;
+    padding-top: 5rem;
+    margin: 15rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.aboutDivInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+
+.aboutDivHeading {
+    position: relative;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    line-height: 132%;
+    font-weight: 500;
+    display: inline-block;
+    width: 508.98px;
+  }
+
+.blue {
+    color: #007fef;
+    text-decoration: none;
+    
+}
+
+.blue:hover {
+    text-decoration: underline;
+    transition: ease-in-out;
+    transition-duration: 100ms;
+    transition-delay: 100ms;
+}
+
+.aboutDivText {
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 140%;
+    display: inline-block;
+    width: 60%;
+}
+
+.photoDiv {
+    position: relative;
+    width: 380px;
+    height: 510px;
+    flex-shrink: 0;
+}
+
+.rectangleDiv {
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    top: 0px;
+    left: 80px;
+    background-color: #a6d5ff;
+}
+.rectangleDiv1 {
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    top: 30px;
+    left: 40px;
+    background-color: #8ac8ff;
+}
+
+.rectangleIcon {
+    position: absolute;
+    width: 300px;
+    height: 450px;
+
+    top: 60px;
+    left: 0;
+    object-fit: cover;
+}
+
+/* .rectangleDiv:hover,
+.rectangleDiv1:hover,
+.rectangleIcon:hover {
+    width:380px;
+    height: 510px;
+    top: 0px;
+    left: 0px;
+
+    transition:ease-out;
+    transition-duration: 200ms;
+}
+
+.rectangleDiv.hover{
+    transition-delay: 100ms;
+}
+
+.rectangleDiv1.hover{
+    transition-delay: 200ms;
+} */

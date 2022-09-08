@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import HomeHero from "../components/HomeHero";
 import LineDiv from "../components/LineDiv";
 import ProjectThumbnail from "../components/ProjectThumbnail";
+import AboutDiv from "../components/AboutDiv";
 
 const Home = () => {
   const onWorkTextClick = useCallback(() => {
@@ -120,39 +121,8 @@ const Home = () => {
       </div>
 
 
-      <div className={styles.aboutDiv} data-scroll-to="aboutContainer">
-        <div className={styles.footerDetailsDiv}>
-          <div className={styles.hiImJohnDoeUXDesigner}>
-            <span>{`Hi, I'm John Doe. `}</span>
-            <span className={styles.uXDesignerSpan}>UX Designer</span>
-            <span> based in Delhi, India</span>
-          </div>
-          <div
-            className={styles.loremIpsumDolorSitAmetCo2}
-          >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit varius massa cursus laoreet suspendisse ac nisl in pulvinar. Auctor integer pellentesque nunc ut at penatibus `}</div>
-          <div className={styles.loremIpsumDolorSitAmetCo3}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit
-            varius massa cursus laoreet suspendisse ac nisl in pulvinar. Auctor
-            integer pellentesque nunc ut at penatibus viverra risus nisl. Sapien
-            nibh interdum tellus sapien et tortor, commodo. Dolor urna pharetra,
-            nulla et morbi sed ornare. Sed condimentum urna pharetra id in enim
-            nunc. Mi ut etiam vel.
-          </div>
-        </div>
-        <div className={styles.photoDiv}>
-          <div className={styles.rectangleDiv} />
-          <div className={styles.rectangleDiv1} />
-          <img
-            className={styles.rectangleIcon}
-            alt=""
-            src="../rectangle-7@2x.png"
-          />
-        </div>
-      </div>
-
 
       <div className={styles.projectListDiv} data-scroll-to="projectListContainer">
-
           <ProjectThumbnail />
           <ProjectThumbnail />
           <ProjectThumbnail />
@@ -160,6 +130,7 @@ const Home = () => {
 
       </div>
 
+      <AboutDiv />
 
       <button className={styles.goTopBtn} onClick={onGoTopBtnClick}>
         <div className={styles.movingArrowDiv6}>

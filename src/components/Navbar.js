@@ -13,7 +13,7 @@ const Navbar = () => {
 
       const onAboutClick = useCallback(() => {
         const anchor = document.querySelector(
-          "[data-scroll-to='projectListContainer']"
+          "[data-scroll-to='aboutContainer']"
         );
         if (anchor) {
           anchor.scrollIntoView({ block: "start", behavior: "smooth" });
